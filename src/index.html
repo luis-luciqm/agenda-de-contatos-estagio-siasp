@@ -34,12 +34,11 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Editar contato</a></li>
-                                <li><a class="dropdown-item" href="#">Excluir contato</a></li>
+                                <li><a class="dropdown-item" href="#">Ver lista de contatos</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Excluir contato</a></li>
                             </ul>
                         </li>
-
                     </ul>
                     <span class="navbar-text">
                         Usuário
@@ -49,7 +48,40 @@
         </nav>
     </header>
 
-    <h2 id="msg-index">Olá, Usuário! Visualize seus contatos</h2>
+    <h2 id="msg-index">Visualize seus contatos</h2>
+
+    <div class="container">
+        <table class="table responsive">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Primeiro</th>
+                    <th scope="col">Último</th>
+                    <th scope="col">Nickname</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <script src="main.js"></script>
 

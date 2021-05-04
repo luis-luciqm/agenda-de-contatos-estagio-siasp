@@ -1,4 +1,32 @@
+body{
+    background-color: white !important;
+}
+
 #msg-index{
     text-align: center !important;
-    margin-top: 16px !important;
+    margin-top: 18px !important;
+    margin-bottom: 28px !important;
 }
+
+.nav-link:hover{
+    color: azure !important;
+    transition-duration: 400ms !important;
+}
+
+.navbar-text{
+    color: #ffff !important;
+}
+
+.thead-dark{
+    background-color: #212529 !important;
+    border-color: 2px solid #32383e !important;
+    /* border: 2px solid #32383e !important;  */
+    color:#fff !important;
+}
+
+.table{
+    width: 88% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
