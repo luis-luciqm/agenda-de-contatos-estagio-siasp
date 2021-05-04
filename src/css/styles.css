@@ -30,3 +30,12 @@ body{
     margin-right: auto !important;
 }
 
+.dropdown-item.excluir{
+    color: red !important;
+}
+
+.dropdown-item.excluir:hover{
+    background-color: rgb(160, 51, 51);
+    color: white !important;
+    transition-duration: 600ms !important;
+}
