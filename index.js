@@ -12,7 +12,8 @@ app.get("/listaContatos", (req, res) => {
 })
 
 app.use(express.static(__dirname + '/src/js'));
-console.log(__dirname + '/src/js')
+app.use(express.static(__dirname + '/src/css'));
+console.log(__dirname + '/src/css');
 
 app.listen(5000, () => {
     console.log('Server is running port 5000')
