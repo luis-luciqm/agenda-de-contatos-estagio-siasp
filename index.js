@@ -2,7 +2,11 @@ const express = require('express')
 const app = express()
 
 app.get("/", (req, res) => {
-    res.send("Estágio SIASP")
+    res.sendFile(__dirname + "/src/index.html")
+})
+
+app.get("/listaContatos", (req, res) => {
+    res.send("Contatos Disponíveis")
 })
 
 app.listen(5000, () => {
