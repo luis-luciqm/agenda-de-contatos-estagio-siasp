@@ -2,6 +2,11 @@ body{
     background-color: white !important;
 }
 
+th, td{
+    text-align: center !important;
+}
+
+
 #msg-index{
     text-align: center !important;
     margin-top: 18px !important;
@@ -28,6 +33,8 @@ body{
     width: 88% !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    border-left: 2px solid black !important;
+    border-right: 2px solid black !important;
 }
 
 .dropdown-item.excluir{
