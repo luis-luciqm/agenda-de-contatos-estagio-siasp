@@ -4,6 +4,7 @@ body{
 
 th, td{
     text-align: center !important;
+    cursor: pointer;
 }
 
 
@@ -33,8 +34,8 @@ th, td{
     width: 88% !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    border-left: 2px solid black !important;
-    border-right: 2px solid black !important;
+    /* border-left: 2px solid black !important;
+    border-right: 2px solid black !important; */
 }
 
 .dropdown-item.excluir{
