@@ -22,7 +22,7 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Visualizar Contatos</a>
+                            <a class="nav-link" aria-current="page" href="#agenda">Visualizar Contatos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">Adicionar Contato</a>
@@ -34,7 +34,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Editar contato</a></li>
-                                <li><a class="dropdown-item" href="#">Ver lista de contatos</a></li>
+                                <li><a class="dropdown-item" href="#">Ver agenda de contatos</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item excluir" href="#">Excluir contato</a></li>
                             </ul>
@@ -48,53 +48,55 @@
         </nav>
     </header>
 
-    <h2 id="msg-index">Visualize seus contatos</h2>
+    <h2 id="msg-index">Visualize seus contatos da Agenda</h2>
 
     <p style="text-align:center">Pesquise por nome ou número</p>
     <div id="inputPesquisa" class="container">
         <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Pesquise aqui" required>
     </div>
 
-    <div class="container">
-        <div class="table-responsive">
-            <table class="table table-hover">
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">Nome</th>
-                        <th scope="col">Número</th>
-                        <th scope="col">Cidade</th>
-                        <th scope="col">Email</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Luís</th>
-                        <td>+55(84)9612-0413</td>
-                        <td>Rafael Fernandes</td>
-                        <td>luislucilandio07@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">João </th>
-                        <td>+55(88)9123-4567</td>
-                        <td>Pau dos Ferros</td>
-                        <td>joao@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Ana</th>
-                        <td>+55(11)9876-5432</td>
-                        <td>São Miguel</td>
-                        <td>ana@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Leonardo</th>
-                        <td>+55(85)9194-5496</td>
-                        <td>Alexandria</td>
-                        <td>leonardo@gmail.com</td>
-                    </tr>
-                </tbody>
-            </table>
+    <section id="agenda">
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Número</th>
+                            <th scope="col">Cidade</th>
+                            <th scope="col">Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Luís</th>
+                            <td>+55(84)9612-0413</td>
+                            <td>Rafael Fernandes</td>
+                            <td>luislucilandio07@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">João </th>
+                            <td>+55(88)9123-4567</td>
+                            <td>Pau dos Ferros</td>
+                            <td>joao@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ana</th>
+                            <td>+55(11)9876-5432</td>
+                            <td>São Miguel</td>
+                            <td>ana@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Leonardo</th>
+                            <td>+55(85)9194-5496</td>
+                            <td>Alexandria</td>
+                            <td>leonardo@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
+    </section>
 
     <!-- inicio modal-->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
