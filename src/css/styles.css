@@ -1,5 +1,9 @@
+html{
+    height: 100% !important;
+}
 body{
     background-color: white !important;
+    height: 100% !important;
 }
 
 th, td{
@@ -50,5 +54,23 @@ th, td{
 
 #inputPesquisa{
     margin-bottom: 23.7px !important;
-    
+    width: 50% !important;
+}
+
+@media (max-width: 580px){
+    #inputPesquisa{
+        width: 80% !important;
+    }
+}
+
+#rodape{
+    bottom: 0;
+    left: 0;
+    height: 55px;
+    position: fixed;
+    width: 100%;
+}
+
+footer{
+    background-color: #212529 !important;
 }
