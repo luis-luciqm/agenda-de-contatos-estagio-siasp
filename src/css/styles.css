@@ -47,3 +47,8 @@ th, td{
     color: white !important;
     transition-duration: 600ms !important;
 }
+
+#inputPesquisa{
+    margin-bottom: 23.7px !important;
+    
+}
