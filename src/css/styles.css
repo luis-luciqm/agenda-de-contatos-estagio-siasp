@@ -20,7 +20,7 @@ th, td{
 
 .nav-link:hover{
     color: azure !important;
-    transition-duration: 400ms !important;
+    transition-duration: 200ms !important;
 }
 
 .navbar-text{
@@ -73,4 +73,18 @@ th, td{
 
 footer{
     background-color: #212529 !important;
+}
+
+.obrigatorio{
+    color: red;
+    float: right;
+    margin-right: 400px;
+    margin-bottom: -23px !important;
+    /* color: red; */
+}
+
+#erro{
+    color: red;
+    text-align: center;
+    margin-bottom: 17px !important;
 }
