@@ -1,5 +1,5 @@
-# Instalar dependências do projeto
+## Instalar dependências do projeto
 `npm install`
 
-# iniciar projeto
+## iniciar projeto
 `node index.js` or `nodemon index.js`
