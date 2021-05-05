@@ -5,3 +5,5 @@
 
 ## iniciar projeto
 `node index.js` or `nodemon index.js`
+
+## Acessar `http://localhost:5000/`
