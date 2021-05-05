@@ -34,7 +34,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Editar contato</a></li>
-                                <li><a class="dropdown-item" href="#">Ver agenda de contatos</a></li>
+                                <li><a class="dropdown-item" href="#agenda">Ver agenda de contatos</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item excluir" href="#">Excluir contato</a></li>
                             </ul>
@@ -58,7 +58,7 @@
     <section id="agenda">
         <div class="container">
             <div class="table-responsive">
-                <table class="table table-hover">
+                <table class="table table-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
                     <thead class="thead-dark">
                         <tr>
                             <th scope="col">Nome</th>
@@ -98,7 +98,7 @@
         </div>
     </section>
 
-    <!-- inicio modal-->
+    <!-- inicio modal cadastro -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -135,7 +135,74 @@
             </div>
         </div>
     </div>
-    <!-- fim modal -->
+    <!-- fim modal cadastro -->
+
+    <!-- data-bs-toggle="modal" data-bs-target="#staticBackdrop2" -->
+
+    <!-- inicio modal visualização de contato e outras funcionalidades -->
+    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Visualizar Contato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 style="text-align: center;">Visualização de Contato</h6><hr>
+                    <div id="infoContato">
+                        <h6>Nome: </h6><p>Luís</p>
+                        <h6>Número: </h6><p>+55(84)9612-0413</p>
+                        <h6>Cidade: </h6><p>Rafael Fernandes</p>
+                        <h6>Email: </h6><p>luislucilandio07@gmail.com</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="alert('Contato excluído com sucesso')" class="btn btn-danger" data-bs-dismiss="modal">Excluir</button>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-dismiss="modal" class="btn btn-primary">Editar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- inicio modal visualização de contato e outras funcionalidades -->
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Editar contato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 style="text-align: center;">Preencha o formulário corretamente para editar o contato</h6><hr>
+                    <form name="adicionarContato" onsubmit="return validarCampos()">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" class="form-control" name="nome" id="name" aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Número</label>
+                            <input type="text" name="numero" class="form-control" id="numero" onkeypress="validarNumero(this)" maxlength="18" required> 
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Cidade (Opcional)</label>
+                            <input type="text" class="form-control" id="cidade"> 
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Email (Opcional)</label>
+                            <input type="text" class="form-control" id="cidade"> 
+                        </div>
+                        <div id="erro"></div>
+                        <div class="modal-footer">
+                            <button type="submit" onclick="" class="btn btn-success">Salvar</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div id="rodape">
         <footer class="bg-dark text-center text-lg-start">
