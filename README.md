@@ -1,4 +1,4 @@
-<h1 align="center"> AGENDA DE CONTATOS </h1>
+<h1 align="center"> AGENDA </h1>
 
 ## Instalar dependências do projeto
 `npm install`
